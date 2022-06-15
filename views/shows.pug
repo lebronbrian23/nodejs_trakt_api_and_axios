@@ -1,0 +1,17 @@
+extends layout
+
+block layout-content
+  h1 Popular Shows
+  //we receive the shows variable in this file
+  table
+    thead
+      tr
+        th Title
+        th Year
+    tbody
+      each show in shows
+        - var url = `https://www.imdb.com/title/${show.ids.imdb}`
+        tr
+          td
+            a(href=`${url}`) #{show.title}
+          td (#{show.year})

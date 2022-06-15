@@ -1,0 +1,1 @@
+Place your .crt, .key, .pem files in here (see "SSL on localhost" PDF on how to generate), then modify index.js according to the comments.
